@@ -1,0 +1,18 @@
+#results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
+  padding: 5px;
+}
+
+#results .film {
+  border: 1px #888 solid;
+  border-radius: .5rem;
+  padding: 5px;
+  @apply bg-blue-300 hover:bg-blue-100;
+}
+
+#results .film .title {
+  font-weight: bold;
+  font-size: 18px
+}

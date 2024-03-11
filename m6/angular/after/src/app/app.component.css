@@ -1,0 +1,7 @@
+.container {
+  background-color: azure;
+  margin: 0 auto;
+  width: 1280px;
+  padding: 8px;
+  min-height: 100vh;
+}
