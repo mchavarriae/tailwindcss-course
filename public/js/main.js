@@ -163,6 +163,7 @@ const loadFailed = async () => await getResults(Categories.Failed);
 const allMenu = document.getElementById("menu-all");
 const passMenu = document.getElementById("menu-pass");
 const failMenu = document.getElementById("menu-fail");
+const darkMenu = document.getElementById("toggle-dark");
 
 function initMenu () {
   allMenu.addEventListener("click", async () => {
@@ -176,6 +177,9 @@ function initMenu () {
   failMenu.addEventListener("click", async () => {
     await loadFailed();
     updateMenu(Categories.Failed);
+  });
+  darkMenu.addEventListener("click", async () => {
+    document.body.classList.toggle("dark");
   });
 }
 
